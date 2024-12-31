@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Robotics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00c6ff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('robot.jpg');
+        }
+
+        .hero h1 {
+            color: goldenrod;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px red;
+            animation: fadeIn 2s;
+        }
+
+        .hero p {
+            font-weight: bold;
+            color: gold;
+            text-shadow: 2px 2px 5px red;
+            font-size: 1.2em;
+            margin-top: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: fadeIn 3s;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: rgb(17, 16, 16);
+            background: wheat;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .features {
+            padding: 50px 10%;
+            background: #10171d;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00c6ff;
+        }
+
+        .features .feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .features .feature img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+
+        .features .feature div {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px 10%;
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><pre>  AI ROBOTICS</pre></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to the Future of Robotics</h1>
+        <p>Discover how Artificial Intelligence is revolutionizing the world of robotics. From autonomous machines to advanced industrial applications, the possibilities are endless.</p>
+        <button onclick="location.href='learnmore.html'">Learn More</button>
+
+    </section>
+
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <div>
+                <h3>Autonomous Navigation</h3>
+                <p>Explore how AI enables robots to navigate complex environments independently, unlocking new possibilities for exploration and efficiency.</p>
+            </div>
+            <img src="humanoid.webp" alt="Autonomous Robot" width="250" height="200">
+        </div>
+        <div class="feature">
+            <div>
+                <h3>Industrial Automation</h3>
+                <p>Learn about AI-powered robots transforming industries with unparalleled precision and productivity.</p>
+            </div>
+            <img src="arm.webp" alt="Robotic Arm" width="250" height="200">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Robotics. Designed with passion for technology. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
